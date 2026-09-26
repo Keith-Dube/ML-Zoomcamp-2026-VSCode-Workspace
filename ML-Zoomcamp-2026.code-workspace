@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "ML Zoomcamp 2026",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe"
+  }
+}
+

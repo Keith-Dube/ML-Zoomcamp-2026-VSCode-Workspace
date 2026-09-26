@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlzoomcamp-model
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlzoomcamp-model
+  template:
+    metadata:
+      labels:
+        app: mlzoomcamp-model
+    spec:
+      containers:
+        - name: api
+          image: mlzoomcamp-model:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+

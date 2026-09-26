@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "uv: sync",
+      "type": "shell",
+      "command": "uv sync --group dev",
+      "problemMatcher": []
+    },
+    {
+      "label": "tests: pytest",
+      "type": "shell",
+      "command": "uv run pytest",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "quality: ruff check",
+      "type": "shell",
+      "command": "uv run ruff check .",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "jupyter: start lab",
+      "type": "shell",
+      "command": "uv run jupyter lab",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}
+

@@ -1,0 +1,40 @@
+# Python and uv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Editors and OS
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local data and generated artifacts
+data/raw/**
+data/processed/**
+data/external/**
+!data/**/README.md
+artifacts/models/**
+artifacts/reports/**
+!artifacts/**/README.md
+*.pkl
+*.joblib
+*.h5
+*.keras
+*.onnx
+
+# Logs and build output
+*.log
+dist/
+build/
+*.egg-info/
+
