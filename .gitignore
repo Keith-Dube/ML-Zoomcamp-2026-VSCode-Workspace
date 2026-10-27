@@ -38,3 +38,5 @@ dist/
 build/
 *.egg-info/
 
+
+/mlzoomcamp-course/
