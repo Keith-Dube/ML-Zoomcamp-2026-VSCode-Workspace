@@ -231,4 +231,4 @@ if __name__ == "__main__":
 # Docker base image: python:3.11.15-slim-bookworm
 
 # Question 6
-# The Docker prediction should match Question 4.
+# The Docker prediction matches Question 4.
