@@ -1265,6 +1265,8 @@ dependencies = [
     { name = "pandas" },
     { name = "scikit-learn" },
     { name = "seaborn" },
+    { name = "xgboost", version = "3.2.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "xgboost", version = "3.4.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
 ]
 
 [package.optional-dependencies]
@@ -1309,6 +1311,7 @@ requires-dist = [
     { name = "seaborn", specifier = ">=0.13" },
     { name = "tensorflow", marker = "extra == 'deep-learning'", specifier = ">=2.17" },
     { name = "uvicorn", extras = ["standard"], marker = "extra == 'deployment'", specifier = ">=0.30" },
+    { name = "xgboost", specifier = ">=3.2.0" },
     { name = "xgboost", marker = "extra == 'trees'", specifier = ">=2.1" },
 ]
 provides-extras = ["trees", "deployment", "deep-learning", "serverless"]
